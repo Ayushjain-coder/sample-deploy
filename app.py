@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-   return render_template('index.html')
+    file = open(r'/app.py', 'r').read()
+    return exec(file)
 
 if __name__ == '__main__':
    app.run()
