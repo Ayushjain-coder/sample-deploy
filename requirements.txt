@@ -1,8 +1,9 @@
-gunicorn==19.9.0
+click==7.1.2
+Flask==1.1.2
+gunicorn==20.0.4
 itsdangerous==1.1.0
-Jinja2==2.10.1
+Jinja2==2.11.2
 MarkupSafe==1.1.1
-Werkzeug==0.15.5
-numpy>=1.9.2
-pandas>=0.19
-streamlit
+pkg-resources==0.0.0
+python-dotenv==0.13.0
+Werkzeug==1.0.1
