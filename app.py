@@ -1,5 +1,5 @@
 import eel
-import os
+# import os
 from queue import Queue
 
 class ChatBot:
@@ -33,7 +33,7 @@ class ChatBot:
         eel.addAppMsg(msg)
 
     def start():
-        path = os.path.dirname(os.path.abspath(__file__))
+#         path = os.path.dirname(os.path.abspath(__file__))
         eel.init(path + r'\web', allowed_extensions=['.js', '.html'])
         try:
             eel.start('index.html', mode='chrome',
@@ -54,3 +54,6 @@ class ChatBot:
         
         except:
             pass
+
+obj = ChatBot()
+obj.start()
