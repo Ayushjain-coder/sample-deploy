@@ -1,9 +1,9 @@
 from flask import Flask, render_template
-from flaskwebgui import FlaskUI
+from flaskwebgui import WebUI
 
 app = Flask(__name__)
 
-ui = FlaskUI(app, host='localhost', port=27005, width=350, height=480, maximized=True)
+ui = WebUI(app, host='localhost', port=27005, width=350, height=480, maximized=True)
 
 @app.route('/')
 def main():
