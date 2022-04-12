@@ -1,1 +1,1 @@
-web: gunicorn processWebhook:app --log-file -
+web: sh setup.sh && streamlit run processWebhook.py
