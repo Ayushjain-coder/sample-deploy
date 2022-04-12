@@ -54,3 +54,6 @@ class ChatBot:
         
         except:
             pass
+        
+ obj = ChatBot()
+ obj.start()
