@@ -3,7 +3,7 @@ from flaskwebgui import FlaskUI
 
 app = Flask(__name__)
 
-ui = FlaskUI(app, width=350, height=480)
+ui = FlaskUI(app, host='localhost', port=27005, width=350, height=480)
 
 @app.route('/')
 def main():
