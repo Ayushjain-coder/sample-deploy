@@ -446,7 +446,7 @@ def test_connect():
 @app.route('/')
 def index():
     """Video streaming home page."""
-    return render_template('camera_page.html')
+    return render_template('camera_index.html')
 
 
 def gen():
