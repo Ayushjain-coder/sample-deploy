@@ -5,10 +5,9 @@ import os, sys
 #instatiate flask app  
 app = Flask(__name__, template_folder='./templates')
 
-camera = cv2.VideoCapture(0)
-
 @app.route('/')
 def index():
+    camera = cv2.VideoCapture(0)
     return render_template('index1.html')
 
 if __name__ == '__main__':
